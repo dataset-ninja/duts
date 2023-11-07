@@ -27,7 +27,7 @@ CATEGORY: Category = Category.General()
 CV_TASKS: List[CVTask] = [CVTask.SemanticSegmentation()]
 ANNOTATION_TYPES: List[AnnotationType] = [AnnotationType.SemanticSegmentation()]
 
-RELEASE_DATE: Optional[str] = None  # e.g. "YYYY-MM-DD"
+RELEASE_DATE: Optional[str] = "2018-01-22"  # e.g. "YYYY-MM-DD"
 if RELEASE_DATE is None:
     RELEASE_YEAR: int = 2017
 
@@ -43,7 +43,7 @@ GITHUB_URL: str = "https://github.com/dataset-ninja/duts"
 ##################################
 ### * Optional after uploading ###
 ##################################
-DOWNLOAD_ORIGINAL_URL: Optional[Union[str, dict]] = ["http://saliencydetection.net/duts/#org1278077"]
+DOWNLOAD_ORIGINAL_URL: Optional[Union[str, dict]] = "http://saliencydetection.net/duts/#org1278077"
 # Optional link for downloading original dataset (e.g. "https://some.com/dataset/download")
 
 CLASS2COLOR: Optional[Dict[str, List[str]]] = None
@@ -64,7 +64,9 @@ AUTHORS: Optional[List[str]] = [
     "Dong Wang", 
     "Baocai Yin", 
     "Xiang Ruan"
-    ]
+]
+AUTHORS_CONTACTS: Optional[List[str]] = ["wlj@mail.dlut.edu.cn" , "lhchuan@dlut.edu.cn"]
+
 
 ORGANIZATION_NAME: Optional[Union[str, List[str]]] = ["Tiwaki Co., Ltd", "Dalian University of Technology, China"]
 ORGANIZATION_URL: Optional[Union[str, List[str]]] = ["https://www.tiwaki.com/company-2", "https://en.dlut.edu.cn/"]
@@ -118,6 +120,7 @@ def get_settings():
     settings["repository"] = REPOSITORY
     settings["citation_url"] = CITATION_URL
     settings["authors"] = AUTHORS
+    settings["authors_contacts"] = AUTHORS_CONTACTS
     settings["organization_name"] = ORGANIZATION_NAME
     settings["organization_url"] = ORGANIZATION_URL
     settings["slytagsplit"] = SLYTAGSPLIT
