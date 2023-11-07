@@ -29,7 +29,7 @@ ANNOTATION_TYPES: List[AnnotationType] = [AnnotationType.SemanticSegmentation()]
 
 RELEASE_DATE: Optional[str] = "2018-01-22"  # e.g. "YYYY-MM-DD"
 if RELEASE_DATE is None:
-    RELEASE_YEAR: int = 2017
+    RELEASE_YEAR: int = None
 
 HOMEPAGE_URL: str = "http://saliencydetection.net/duts/#org1278077"
 # e.g. "https://some.com/dataset/homepage"
