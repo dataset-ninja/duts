@@ -1,4 +1,4 @@
-**DUTS** is a dataset for a semantic segmentation task. It is applicable or relevant across various domains. 
+**DUTS** is a dataset for semantic segmentation and weakly supervised learning tasks. It is applicable or relevant across various domains. 
 
 The dataset consists of 15572 images with 15572 labeled objects belonging to 1 single class (*salient_object*).
 
