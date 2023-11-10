@@ -24,7 +24,7 @@ LICENSE: License = License.Unknown()
 APPLICATIONS: List[Union[Industry, Domain, Research]] = [Domain.General()]
 CATEGORY: Category = Category.General(benchmark=True)
 
-CV_TASKS: List[CVTask] = [CVTask.SemanticSegmentation()]
+CV_TASKS: List[CVTask] = [CVTask.SemanticSegmentation(), CVTask.WeaklySupervisedLearning()]
 ANNOTATION_TYPES: List[AnnotationType] = [AnnotationType.SemanticSegmentation()]
 
 RELEASE_DATE: Optional[str] = "2018-01-22"  # e.g. "YYYY-MM-DD"
